@@ -1,0 +1,36 @@
+body {
+	background-color: #58748a;
+	padding: 50px;
+
+}
+
+
+.header {
+	display: flex;
+	padding: 10px;
+	color: white;
+	background-color: #064b80;
+	border-radius: 10px 10px 0px 0px;
+	background: rgb(0,22,36);
+	background: linear-gradient(90deg, rgba(0,22,36,1) 0%, rgba(9,9,121,1) 17%, rgba(0,212,255,1) 97%); 
+	
+}
+
+
+.card-container {
+	max-width: 550px;
+	margin: auto;
+	background-color: #d8e7f2;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.weather-container {
+	display: inline-block;
+	padding: 10px;
+}
+
+
+h1, h4 {
+	font-family: 'Montserrat', sans-serif;
+}
+

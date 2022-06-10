@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static 'weatherapp/style.css' %}">
+	<title>
+		Weather App
+	</title>
+</head>
+
+
+<body>
+	<div class="card-container">
+		{% block content %}
+
+		{% endblock content %}	
+	</div>
+</body>
+
+</html>

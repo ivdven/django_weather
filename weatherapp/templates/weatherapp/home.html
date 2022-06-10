@@ -1,0 +1,40 @@
+{% extends 'weatherapp/base.html' %}
+{% block content %}
+<body>
+
+	<div class="header">
+			<div>
+				<h1>Welcome to Weather-City</h1>
+				<form method="post"> {% csrf_token %}
+					<input type="text" placeholder="Search the weather in..." name="search-city" value="{{ city }}">
+					<input type="submit" value="Search">
+				</form>
+			</div>
+	</div>
+
+	
+	<div class="weather-container">
+		<div class="city">
+			<h4>City: {{ city }}</h4>
+		</div>
+		<div class="country-code">
+			<h4>Country Code: {{ country }}</h4>
+		</div>
+		<div class="day">
+			<h4>Current time: {{ day }}</h4>
+		</div>
+		<div class="description">
+			<h4>Description weather: {{ description }}</h4>
+		</div>
+		<div class="icon">
+			<img src="http://openweathermap.org/img/w/{{ icon }}.png">
+		</div>
+		<div class="temp">
+			<h4>Temperature: {{ temp|floatformat:0 }} &#186;</h4>
+		</div>
+	</div>
+	
+</body>
+{% endblock content %}
+
+
